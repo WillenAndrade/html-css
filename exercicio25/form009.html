@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Testando JavaScript no Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+      <p>
+        <label for="inum">Número: </label>
+        <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+        <output id="ival"></output>
+      </p>
+
+
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+      </p>
+
+    </form>
+
+  </body>
+</html>
